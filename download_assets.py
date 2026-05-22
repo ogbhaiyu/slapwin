@@ -6,7 +6,7 @@ def download_audio():
     url = "https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=Yeah%20right%20there%20daddy...%20ohhh"
     headers = {'User-Agent': 'Mozilla/5.0'}
     
-    web_dir = os.path.join("web")
+    web_dir = os.path.join("docs")
     app_dir = os.path.join("app")
     
     os.makedirs(web_dir, exist_ok=True)
