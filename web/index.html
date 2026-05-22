@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlapWin - Make Charging Your Laptop Fun & Viral</title>
+    <meta name="description" content="Get SlapWin for Windows! The ultimate novelty utility that plays custom sound effects when you plug in your charger. Upgrade to the Prank Edition to prank your friends!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="LOGO1.png">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img class="logo-img" src="LOGO1.png" alt="SlapWin Logo">
+            <span>SlapWin</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#demo">Interactive Demo</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+        </nav>
+        <a href="#pricing" class="cta-button nav-cta" id="nav-purchase-btn">Get SlapWin</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge">😈 Prank Your Friends</div>
+                <h1>Give Your Windows Charger Some <span>Personality</span></h1>
+                <p class="hero-subtitle">Why should Macbooks have all the fun? SlapWin plays hilarious, custom sounds the second you plug in your charger. Get ready for some serious laughs.</p>
+                <div class="hero-actions">
+                    <a href="#pricing" class="cta-button primary-cta" id="hero-get-started-btn">Buy SlapWin Now</a>
+                    <button class="cta-button sound-preview-cta" id="hero-sound-preview-btn">🔊 Hear Sound Preview</button>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <div class="glow-sphere"></div>
+                <!-- Interactive Demo Container -->
+                <div class="demo-wrapper" id="demo">
+                    <div class="demo-title">⚡ Drag the Charger to Plug It In! ⚡</div>
+                    
+                    <!-- Dynamic SVG Cable Layer -->
+                    <svg class="cable-svg" id="cable-layer">
+                        <defs>
+                            <linearGradient id="cable-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="var(--secondary)" />
+                                <stop offset="50%" stop-color="var(--primary)" />
+                                <stop offset="100%" stop-color="#00ffaa" />
+                            </linearGradient>
+                        </defs>
+                        <path id="cable-path" d="" fill="none" stroke="url(#cable-grad)" stroke-width="4" stroke-linecap="round" />
+                    </svg>
+
+                    <div class="laptop-container" id="laptop-frame">
+                        <div class="laptop-screen">
+                            <div class="screen-content">
+                                <div class="avatar-face">😴</div>
+                                <div class="battery-status">Battery Low: 12%</div>
+                                <div class="moan-text" id="moan-subtitle">"Yeah... right there..."</div>
+                            </div>
+                        </div>
+                        <div class="laptop-keyboard">
+                            <div class="charging-port" id="target-port">
+                                <div class="port-label">PORT</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charger-cable" id="drag-charger">
+                        <div class="connector-tip">⚡</div>
+                        <div class="cable-wire"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <h2>Why Choose SlapWin?</h2>
+            <p class="section-subtitle">Lightweight, instant response, and 100% viral potential.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔊</div>
+                    <h3>Custom Sounds</h3>
+                    <p>Load any MP3 or WAV file, or keep the legendary default. Easily reset back anytime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Zero Resource Lag</h3>
+                    <p>Runs natively using Windows APIs. Zero impact on battery life or gaming performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">😈</div>
+                    <h3>Stealth Prank Mode</h3>
+                    <p>Upgrade to Prank Edition to compile a silent background installer for your friends. Maxes volume and plays the sound when plugged in!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <h2>Choose Your Edition</h2>
+            <p class="section-subtitle">Instant download. Secure checkout. 100% satisfaction guaranteed.</p>
+            <div class="pricing-cards">
+                <!-- Standard Edition -->
+                <div class="price-card">
+                    <div class="card-glow"></div>
+                    <div class="price-header">
+                        <h3>Standard Edition</h3>
+                        <div class="price">$4.99</div>
+                        <p class="price-desc">Perfect for personal laptops.</p>
+                    </div>
+                    <ul class="price-features">
+                        <li>⚡ Instant play on charger insert</li>
+                        <li>🔊 Custom MP3/WAV file support</li>
+                        <li>💻 Start on Windows Boot</li>
+                        <li>🔄 Lifetime updates</li>
+                    </ul>
+                    <a href="https://YOUR_GUMROAD_LINK.gumroad.com/l/slapwin-standard" target="_blank" rel="noopener" class="buy-btn" id="buy-standard-btn">Buy Standard</a>
+                </div>
+
+                <!-- Prank Edition -->
+                <div class="price-card popular">
+                    <div class="badge-popular">MOST POPULAR</div>
+                    <div class="card-glow neon-glow"></div>
+                    <div class="price-header">
+                        <h3>Prank Edition</h3>
+                        <div class="price">$9.99</div>
+                        <p class="price-desc">The ultimate troll setup.</p>
+                    </div>
+                    <ul class="price-features">
+                        <li>✨ Everything in Standard</li>
+                        <li>😈 Standalone prank executable</li>
+                        <li>🕵️‍♂️ Runs 100% invisible on victim's PC</li>
+                        <li>🔊 Force System Volume to 100%</li>
+                        <li>📺 Pops full-screen "PRANKED!" screen</li>
+                        <li>🛡️ Safe & antivirus friendly</li>
+                    </ul>
+                    <a href="https://YOUR_GUMROAD_LINK.gumroad.com/l/slapwin-prank" target="_blank" rel="noopener" class="buy-btn popular-btn" id="buy-prank-btn">Get Prank Edition</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4>Is SlapWin safe for my computer?</h4>
+                    <p>Absolutely. SlapWin is written natively in Python and interacts only with standard Windows power and audio APIs. The optional "Run on Startup" feature adds a single, standard registry entry that is fully removable from within the app. It has zero impact on performance.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Does the Prank Edition trigger antivirus flags?</h4>
+                    <p>No. Unlike malicious spyware, SlapWin's prank mode doesn't attempt to access sensitive files, steal passwords, or block task termination. It includes an easy exit mechanism to ensure compliance with security standards.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SlapWin. All rights reserved. Built for fun & virality.</p>
+    </footer>
+
+    <!-- Audio element for demo -->
+    <audio id="demo-audio" src="daddy.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
