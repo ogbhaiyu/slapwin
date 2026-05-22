@@ -415,7 +415,7 @@ class SlapWinApp(ctk.CTk):
 
     def open_prank_gumroad(self):
         import webbrowser
-        webbrowser.open("https://YOUR_GUMROAD_LINK.gumroad.com/l/slapwin-prank")
+        webbrowser.open("https://jyotiraditya56.gumroad.com/l/rkskt")
 
     # ==================== STARTUP REGISTRY METHODS ====================
 
